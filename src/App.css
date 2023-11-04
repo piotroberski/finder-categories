@@ -1,0 +1,127 @@
+.App {
+	padding: 40px 0;
+
+	@media screen and (min-width: 961px) {
+		padding: 64px 0;
+	}
+}
+
+.Container {
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 961px) {
+		padding: 0;
+		width: 920px;
+	}
+
+	@media screen and (min-width: 1281px) {
+		width: 1120px;
+	}
+}
+
+.Intro {
+	margin-bottom: 24px;
+}
+
+.Intro h2 {
+	margin: 0 0 8px;
+	color: #18304b;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 120%;
+
+	@media screen and (min-width: 961px) {
+		font-size: 32px;
+		line-height: 38px;
+	}
+}
+
+.Intro p {
+	margin: 0;
+	color: #6c7881;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 150%;
+
+	@media screen and (min-width: 961px) {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.Tiles {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+
+	@media screen and (min-width: 601px) {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	@media screen and (min-width: 961px) {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+}
+
+.Tile {
+	border: 1px solid #e3e5e8;
+	border-radius: 16px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 105px;
+
+	&:hover {
+		border-color: var(--color-vivid-blue);
+	}
+}
+
+.Tile__icon {
+	width: 40px;
+	height: 40px;
+}
+
+.Tile__title {
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	color: var(--color-vivid-blue);
+
+	@media screen and (min-width: 760px) {
+		font-size: 16px;
+	}
+}
+
+.ToggleButtonWrapper {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.ToggleButtonWrapper__Button {
+	display: inline-flex;
+	align-items: center;
+	appearance: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-weight: 500;
+	text-align: center;
+	color: var(--color-vivid-blue);
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1;
+	padding: 10px 15px;
+}
+
+.ToggleButtonWrapper__Button svg {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	fill: var(--color-vivid-blue);
+}
