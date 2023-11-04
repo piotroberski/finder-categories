@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Differences between the original site section and this project
+
+The tile height is different because I've added padding to all sides to prevent situations where the tile content touches the tile borders. Also the height is set as the min-height, allowing content to expand within the tile.
+
+I have also changed the button title to "Toggle categories" because the original one is always "Show categories", even when the section is already expanded.
+
+For screen widths above 961px on https://www.finder.com.au/, the layout is broken because the container width is setted to 972px. To address this issue, I've chenged it to 920px.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
